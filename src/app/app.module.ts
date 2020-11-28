@@ -10,7 +10,8 @@ import { IconComponent } from './icon/icon.component';
 import { ProgressSpinerComponent } from './progress-spiner/progress-spiner.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { MenuComponent } from './menu/menu.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {FormsModule} from '@angular/forms'
     IconComponent,
     ProgressSpinerComponent,
     ToolbarComponent,
-    SidenavComponent
+    SidenavComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
