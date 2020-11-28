@@ -9,6 +9,8 @@ import { ButtonComponent } from './button/button.component';
 import { IconComponent } from './icon/icon.component';
 import { ProgressSpinerComponent } from './progress-spiner/progress-spiner.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -16,12 +18,14 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     ButtonComponent,
     IconComponent,
     ProgressSpinerComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MaterialModule
   ],
   providers: [],

@@ -1,0 +1,39 @@
+<p>sidenav works!</p>
+
+<mat-sidenav-container>
+    <mat-sidenav mode="over" [(opened)]="opened">Sidenav</mat-sidenav>
+    <mat-sidenav-content>
+        Main
+        <button (click)="opened=!opened">Toggle Open</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<mat-sidenav-container>
+    <mat-sidenav mode="push" [(opened)]="opened">Sidenav</mat-sidenav>
+    <mat-sidenav-content>
+        Main
+        <button (click)="opened=!opened">Toggle Open</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<mat-sidenav-container>
+    <mat-sidenav mode="side" [(opened)]="opened">Sidenav</mat-sidenav>
+    <mat-sidenav-content>
+        Main
+        <button (click)="opened=!opened">Toggle Open</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="log('opened')" (closed)="log('closed')" >Sidenav</mat-sidenav>
+    <mat-sidenav-content>
+        Main
+        <button (click)="opened=!opened">Toggle Open</button>
+        <button (click)="sidenav.open()">Open</button>
+        <button (click)="sidenav.close()">close</button>
+        <button (click)="sidenav.toggle()">Toggle</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
