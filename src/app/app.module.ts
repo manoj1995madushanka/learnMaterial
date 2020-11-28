@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonComponent } from './button/button.component';
 import { IconComponent } from './icon/icon.component';
+import { ProgressSpinerComponent } from './progress-spiner/progress-spiner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
-    IconComponent
+    IconComponent,
+    ProgressSpinerComponent
   ],
   imports: [
     BrowserModule,
