@@ -11,7 +11,8 @@ import { ProgressSpinerComponent } from './progress-spiner/progress-spiner.compo
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import {FormsModule} from '@angular/forms';
-import { MenuComponent } from './menu/menu.component'
+import { MenuComponent } from './menu/menu.component';
+import { ListComponent } from './list/list.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MenuComponent } from './menu/menu.component'
     ProgressSpinerComponent,
     ToolbarComponent,
     SidenavComponent,
-    MenuComponent
+    MenuComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
