@@ -1,0 +1,55 @@
+<p>button works!</p>
+
+<div>
+    <button mat-button>Click me..</button>
+    <button mat-raised-button>Click me..</button>
+    <button mat-flat-button>Click me..</button>
+    <button mat-stroked-button>Click me..</button>
+</div>
+
+
+<div>
+    <button mat-icon-button>Icon</button>
+    <button mat-fab>Fab</button>
+    <button mat-mini-fab>Minifab</button>
+</div>
+
+<div>
+    <button color="primary" mat-button>Primary</button>
+    <button color="accent" mat-button>Accent</button>
+    <button color="warn" disableRipple mat-button>Warn</button>
+    <button color="primary" mat-raised-button>Primary</button>
+    <button color="accent" mat-raised-button>Accent</button>
+    <button color="warn" mat-raised-button>Warn</button>
+</div>
+
+<div>button toggles</div>
+<mat-button-toggle #toggleBtn1>Toggle1</mat-button-toggle>
+{{toggleBtn1.checked}}
+
+<mat-button-toggle #toggleBtn2 checked>Toggle2</mat-button-toggle>
+{{toggleBtn2.checked}}
+
+<mat-button-toggle #toggleBtn3 disabled>Toggle3</mat-button-toggle>
+{{toggleBtn3.checked}}
+
+
+<div>Button toggle group</div>
+<div>
+    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+        <mat-button-toggle value="angular">Angular</mat-button-toggle>
+        <mat-button-toggle value="react">React</mat-button-toggle>
+        <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGroup.value}}
+</div>
+
+<div>Button toggle group with multiple values</div>
+<div>
+    <mat-button-toggle-group #toggleGroupMultiple="matButtonToggleGroup" multiple>
+        <mat-button-toggle value="angular1">Angular</mat-button-toggle>
+        <mat-button-toggle value="react1">React</mat-button-toggle>
+        <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group>
+     {{toggleGroupMultiple.value}}
+</div>
